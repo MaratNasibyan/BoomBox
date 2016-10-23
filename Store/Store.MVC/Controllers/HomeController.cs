@@ -8,10 +8,10 @@ namespace Store.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        Store.DAL.EfContext.StoreContext db = new DAL.EfContext.StoreContext();
         public ActionResult Index()
-        {
-            return View();
+        {          
+            return View(db.Products);
         }
     }
 }
