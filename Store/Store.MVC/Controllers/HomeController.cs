@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Store.DAL.Repositories;
 
 namespace Store.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        Store.DAL.EfContext.StoreContext db = new DAL.EfContext.StoreContext();
+        UnitOfWork db = new UnitOfWork();
         public ActionResult Index()
         {          
-            return View(db.Products);
+            return View(db.Products.GetAll());
         }
     }
 }

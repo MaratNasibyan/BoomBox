@@ -9,7 +9,7 @@ using Store.DAL.Interfaces;
 
 namespace Store.DAL.Repositories
 {
-    public class UnitOfWork :IUnitOfwork
+    public class UnitOfWork : IUnitOfwork
     {
         private StoreContext db = new StoreContext();
         private ProductRepository productRepository;

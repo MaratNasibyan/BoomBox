@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using Store.DAL.Entities;
 using Store.DAL.Interfaces;
 using Store.DAL.Repositories;
+using Store.DAL.EfContext;
 namespace Store.DAL.Interfaces
 {
     interface IUnitOfwork:IDisposable
     {
-       ProductRepository Products { get;}
+        ProductRepository Products { get;}
         void Save();
     }
 }
