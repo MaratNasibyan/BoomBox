@@ -57,9 +57,7 @@
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\UnitOfWork.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="sasdsad\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

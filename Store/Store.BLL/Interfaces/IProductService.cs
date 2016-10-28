@@ -7,7 +7,7 @@ using Store.BLL.DTO;
 
 namespace Store.BLL.Interfaces
 {
-    interface IProductService
+    public  interface IProductService
     {
         void MakeProduct(ProductDTO productDTO);
         ProductDTO GetProduct(int? Id);

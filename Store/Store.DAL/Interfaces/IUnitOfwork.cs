@@ -9,7 +9,7 @@ using Store.DAL.Repositories;
 using Store.DAL.EfContext;
 namespace Store.DAL.Interfaces
 {
-    interface IUnitOfwork:IDisposable
+    public interface IUnitOfwork:IDisposable
     {
         ProductRepository Products { get;}
         void Save();
