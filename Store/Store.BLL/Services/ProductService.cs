@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Store.BLL.DTO;
 using Store.BLL.Interfaces;
+using Store.BLL.Infrastructure;
 using Store.DAL.EfContext;
 using Store.DAL.Repositories;
 using Store.DAL.Entities;
@@ -28,7 +29,17 @@ namespace Store.BLL.Services
 
         public ProductDTO GetProduct(int? Id)
         {
-            throw new NotImplementedException();
+            if(Id==null)
+            {
+                throw new ValidationException("Id not found","");
+            }
+            var product = u.Products.Get(Id.Value);
+            if(product==null)
+            {
+                throw new ValidationException("product not found", "");
+            }
+            Mapper.Initialize(n => n.CreateMap<Product, ProductDTO>());
+            return Mapper.Map<Product, ProductDTO>(product);
         }
 
         public void MakeProduct(ProductDTO productDTO)

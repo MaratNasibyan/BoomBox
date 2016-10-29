@@ -51,6 +51,7 @@
     <Compile Include="BusinesModels\Discount.cs" />
     <Compile Include="DTO\ProductDTO.cs" />
     <Compile Include="Infrastructure\ServiceModule.cs" />
+    <Compile Include="Infrastructure\ValidationException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interfaces\IProductService.cs" />
     <Compile Include="Services\ProductService.cs" />
