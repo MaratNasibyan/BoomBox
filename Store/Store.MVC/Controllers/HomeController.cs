@@ -14,19 +14,23 @@ namespace Store.MVC.Controllers
 {
     public class HomeController : Controller
     {
-
-        //ProductService db = new ProductService();
-        //IProductService db;
         public HomeController(IProductService serv)
         {
             this.db = serv;
         }
+
         public ActionResult Index()
         {
             IEnumerable<ProductDTO> productDTO = db.GetAll();
             Mapper.Initialize(n => n.CreateMap<ProductDTO, ProductViewModel>());
             var products = Mapper.Map<IEnumerable<ProductDTO>, List<ProductViewModel>>(productDTO);
             return View(products);            
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            db.Dispose();
+            base.Dispose(disposing);
         }
         private readonly IProductService db;
     }
