@@ -27,6 +27,24 @@ namespace Store.MVC.Controllers
             return View(products);            
         }
 
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "ProductID,Name,Description,Price,Category")] ProductViewModel product)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
+
+            return View(product);
+        }
+
         protected override void Dispose(bool disposing)
         {
             db.Dispose();

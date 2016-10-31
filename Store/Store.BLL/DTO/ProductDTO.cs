@@ -13,5 +13,6 @@ namespace Store.BLL.DTO
         public string Description { get; set; }
         public decimal Price { get; set; }
         public string Category { set; get; }
+        //public string Image { get; set; }
     }
 }
