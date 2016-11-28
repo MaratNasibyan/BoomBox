@@ -41,7 +41,6 @@ namespace Store.MVC.Controllers
             {
                 return RedirectToAction("Index");
             }
-
             return View(product);
         }
 

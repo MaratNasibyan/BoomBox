@@ -15,7 +15,7 @@ namespace Store.DAL.Repositories
         private StoreContext db;
         public ProductRepository(StoreContext db)
         {
-            this.db = db;
+            this.db = db;            
         }
 
         public void Create(Product Product)
@@ -37,12 +37,12 @@ namespace Store.DAL.Repositories
 
         public Product Get(int id)
         {
-            return db.Products.Find(id);
+            return db.Products.SqlQuery("Select * from Products where Id=@p",id).Single();
         }
 
         public IEnumerable<Product> GetAll()
         {
-            return db.Products;
+            return db.Products.SqlQuery("Select * from Products");
         }
 
         public void Update(Product product)

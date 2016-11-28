@@ -30,8 +30,7 @@ namespace Store.MVC.Util
 
         private void AddBindings()
         {
-            Kernel.Bind<IProductService>().To<ProductService>();
-           
+            Kernel.Bind<IProductService>().To<ProductService>();           
         }
     }
 }

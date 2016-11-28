@@ -38,7 +38,7 @@ namespace Store.DAL.Repositories
             {
                 if (disposing)
                 {              
-                    db.Dispose();
+                    db.Dispose();                
                 }           
 
                 disposedValue = true;
@@ -47,7 +47,7 @@ namespace Store.DAL.Repositories
         
         public void Dispose()
         {            
-            Dispose(true);           
+            Dispose(true);                       
         }
         #endregion
 

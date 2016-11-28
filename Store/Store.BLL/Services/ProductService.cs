@@ -12,7 +12,6 @@ using Store.DAL.Entities;
 using Store.DAL.Interfaces;
 using AutoMapper;
 
-
 namespace Store.BLL.Services
 {   
     public class ProductService : IProductService
