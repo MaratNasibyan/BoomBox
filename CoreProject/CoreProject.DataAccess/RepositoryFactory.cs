@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace CoreProject.DataAccess
 {
-    public class Class1
+    public class RepositoryFactory
     {
-        public Class1()
+        public RepositoryFactory()
         {
         }
     }
