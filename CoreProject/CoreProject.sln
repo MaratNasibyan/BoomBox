@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{BCC1B74A-5766-4D17-9288-089054E2AA00}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CoreProject.UI", "CoreProject.UI\CoreProject.UI.xproj", "{A56DCBC9-9F77-4BAD-A3F8-32DE07E915AC}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Kdram.UI", "CoreProject.UI\Kdram.UI.xproj", "{A56DCBC9-9F77-4BAD-A3F8-32DE07E915AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{9E185A53-1B1F-40C0-89B7-D12BA94854B1}"
 EndProject
@@ -13,23 +13,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{91C388B3-BF94-4C8C-8236-E1CF87121489}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CoreProject.Abstraction", "CoreProject.Abstraction\CoreProject.Abstraction.xproj", "{CDF31C5D-D2BB-495B-837B-F71B92DFDE0E}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Kdram.Abstraction", "CoreProject.Abstraction\Kdram.Abstraction.xproj", "{CDF31C5D-D2BB-495B-837B-F71B92DFDE0E}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CoreProject.BusinessLogic", "CoreProject.BusinessLogic\CoreProject.BusinessLogic.xproj", "{BE192FD8-6997-4C8A-B548-A24DC03E84A1}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Kdram.BusinessLogic", "CoreProject.BusinessLogic\Kdram.BusinessLogic.xproj", "{BE192FD8-6997-4C8A-B548-A24DC03E84A1}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CoreProject.Models", "CoreProject.Models\CoreProject.Models.xproj", "{B94681F6-B480-4F71-8298-04E30461372F}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Kdram.Models", "CoreProject.Models\Kdram.Models.xproj", "{B94681F6-B480-4F71-8298-04E30461372F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CoreProject.DataAccess", "CoreProject.DataAccess\CoreProject.DataAccess.xproj", "{FCF5F051-5F75-4BBB-8FCF-2306047132F7}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Kdram.DataAccess", "CoreProject.DataAccess\Kdram.DataAccess.xproj", "{FCF5F051-5F75-4BBB-8FCF-2306047132F7}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CoreProject.DbMap", "CoreProject.DbMap\CoreProject.DbMap.xproj", "{2683EF4A-227C-42DD-9991-A791AB75A226}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Kdram.DbMap", "CoreProject.DbMap\Kdram.DbMap.xproj", "{2683EF4A-227C-42DD-9991-A791AB75A226}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{02156F18-7A33-42F9-81CD-B38B643ED79D}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CoreProject.Test", "CoreProject.Test\CoreProject.Test.xproj", "{8C6B93AB-DC0C-44F0-9B9D-C023F9F8733F}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Kdram.Test", "CoreProject.Test\Kdram.Test.xproj", "{8C6B93AB-DC0C-44F0-9B9D-C023F9F8733F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitCoreProject", "UnitCoreProject\UnitCoreProject.csproj", "{4A7B63D1-00A5-4D87-9980-B298C7FE7DD0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kram.Project", "UnitCoreProject\Kram.Project.csproj", "{4A7B63D1-00A5-4D87-9980-B298C7FE7DD0}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MockUp", "MockUp\MockUp.xproj", "{19A34896-589E-4480-9F38-CDF20F5C9F3C}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Kdram.MockUp", "MockUp\Kdram.MockUp.xproj", "{19A34896-589E-4480-9F38-CDF20F5C9F3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

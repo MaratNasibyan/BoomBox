@@ -35,7 +35,7 @@ namespace CoreProject.UI
         {
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
-
+            
             services.AddMvc();
         }
 
