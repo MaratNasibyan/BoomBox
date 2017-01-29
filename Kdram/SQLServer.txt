@@ -1,0 +1,4 @@
+
+
+//Final Connstrig SQLSERVER
+Scaffold-DbContext "Data Source= MARAT; Initial Catalog=Kdram; Integrated Security=True; Trusted_Connection=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Context
