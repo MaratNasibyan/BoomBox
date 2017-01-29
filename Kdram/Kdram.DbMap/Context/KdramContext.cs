@@ -8,6 +8,8 @@ namespace Kdram.DbMap.Context
     {
         public virtual DbSet<Human> Human { get; set; }
 
+        // Unable to generate entity type for table 'dbo.Table_1'. Please see the warning messages.
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
