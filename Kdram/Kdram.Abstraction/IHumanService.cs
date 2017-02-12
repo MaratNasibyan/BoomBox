@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using Kdram.DbMap.Context;
 
 namespace Kdram.Abstraction
 {
-    interface IHumanService
+    public interface IHumanService
     {
-        //IEnumerable<Human> GetAllHumans();
+       IEnumerable<Human> GetAllHumans();
     }
 }

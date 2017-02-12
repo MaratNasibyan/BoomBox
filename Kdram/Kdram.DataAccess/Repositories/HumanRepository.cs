@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Kdram.DataAccess.Abstraction;
-//using Kdram.DbMap.Context;
+using Kdram.DbMap.Context;
 
 namespace Kdram.DataAccess.Repositories
 {
-    //public class HumanRepository : BaseRepository, IGetHumans<Human>
-    //{
-    //    public HumanRepository(KdramContext Context) : base(Context)
-    //    {
-    //        this.Context = Context;
-    //    }
+    public class HumanRepository : BaseRepository, IGetHumans<Human>
+    {
+        public HumanRepository(KdramContext Context) : base(Context)
+        {
+            this.Context = Context;
+        }
 
-    //    public IEnumerable<Human> GetAllHumans()
-    //    {
-    //        return  Context.Human.ToList();
-    //    }
+        public IEnumerable<Human> GetAllHumans()
+        {
+            return Context.Human.ToList();
+        }
 
-    //    private readonly KdramContext Context;
-    //}
+        private readonly KdramContext Context;
+    }
 }

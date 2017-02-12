@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Kdram.Abstraction;
+using Kdram.DbMap.Context;
 
 namespace Kdram.BussinesLogic
 {
-    public class Class1
+    public class HumanService : IHumanService
     {
-        public Class1()
+        public IEnumerable<Human> GetAllHumans()
         {
+            
         }
     }
 }
