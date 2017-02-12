@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Kdram.DataAccess.Repositories
+
+namespace Kdram.Abstraction
 {
-    public class Repositories
+    interface IHumanService
     {
+        //IEnumerable<Human> GetAllHumans();
     }
 }

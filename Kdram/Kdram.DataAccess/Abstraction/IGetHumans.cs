@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 namespace Kdram.DataAccess.Abstraction
 {
-    public class IRepository
+    interface IGetHumans<T> where T : class
     {
-   
+        IEnumerable<T> GetAllHumans();
     }
 }
