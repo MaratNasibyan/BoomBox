@@ -6,7 +6,7 @@ using Kdram.DbMap.Context;
 
 namespace Kdram.DataAccess.Repositories
 {
-    internal abstract class BaseRepository
+    internal abstract class BaseResultRepository
     {
         private static KdramContext context;
         
