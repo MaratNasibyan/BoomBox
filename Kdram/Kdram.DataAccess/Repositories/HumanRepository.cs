@@ -7,7 +7,7 @@ using Kdram.DbMap.Context;
 
 namespace Kdram.DataAccess.Repositories
 {
-    public class HumanResultRepository : BaseRepository, IHumanResultRepository
+    public class HumanResultRepository : BaseResultRepository, IHumanResultRepository
     {
         public HumanRepository(KdramContext Context) : base(Context)
         {
