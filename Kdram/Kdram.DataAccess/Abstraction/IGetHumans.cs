@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Kdram.DataAccess.Abstraction
 {
-    interface IGetHumans<T> where T : class
+    public interface IHumanResultRepository
     {
         IEnumerable<T> GetAllHumans();
     }
