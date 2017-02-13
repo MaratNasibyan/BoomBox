@@ -17,7 +17,7 @@ namespace Kdram.DataAccess.Repositories
                 return context ?? (context = new KdramContext());
             }
         }
-        public BaseRepository(KdramContext Context)
+        public BaseResultRepository(KdramContext Context)
         {
             this.Context = Context;
         }
