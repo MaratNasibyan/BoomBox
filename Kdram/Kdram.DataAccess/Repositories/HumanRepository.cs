@@ -9,7 +9,7 @@ namespace Kdram.DataAccess.Repositories
 {
     public class HumanResultRepository : BaseResultRepository, IHumanResultRepository
     {
-        public HumanRepository(KdramContext Context) : base(Context)
+        public HumanResultRepository(KdramContext Context) : base(Context)
         {
             this.Context = Context;
         }
