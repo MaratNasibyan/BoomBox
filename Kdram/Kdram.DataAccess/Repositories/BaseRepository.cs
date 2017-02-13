@@ -6,8 +6,17 @@ using Kdram.DbMap.Context;
 
 namespace Kdram.DataAccess.Repositories
 {
-    public class BaseRepository
+    internal abstract class BaseRepository
     {
+        private static KdramContext context;
+        
+        protected KdramContext Context
+        {
+            get
+            {
+                return context ?? (context = new KdramContext());
+            }
+        }
         public BaseRepository(KdramContext Context)
         {
             this.Context = Context;
