@@ -6,11 +6,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Kdram.DataAccess
 {
-    public class RepositoryFactory
+    public static class RepositoryFactory
     {
-        public RepositoryFactory()
+        private static IHumanResultRepository humanResult;
+        
+        public static IHumanResultRepository HumanResult
         {
-         
-        }
+            get
+            {
+                return humanResult ?? (humanResult = new HumanResultRepository());
+            }
+        }        
     }
 }
