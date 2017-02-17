@@ -8,10 +8,10 @@ using Kdram.DbMap.Entities;
 
 namespace Kdram.BussinesLogic
 {
-    public class HumanResultService /*: IHumanResultService*/
+    public class HumanResultService : IHumanResultService
     {
         #region Get Humans
-            public IEnumerable<Human> GetHuman()
+            public IEnumerable<Human> GetAllHumans()
             {
                var result = RepositoryFactory.HumanResult.GetAllHumans();
 
