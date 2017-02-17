@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Kdram.DbMap.Context
+namespace Kdram.DbMap.Entities
 {
     public partial class Human
     {

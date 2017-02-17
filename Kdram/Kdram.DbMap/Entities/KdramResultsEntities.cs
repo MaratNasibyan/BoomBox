@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace Kdram.DbMap.Context
+namespace Kdram.DbMap.Entities
 {
-    public partial class KdramContext : DbContext
+    public partial class KdramResultsEntities : DbContext
     {
         public virtual DbSet<Human> Human { get; set; }
 
@@ -24,7 +24,7 @@ namespace Kdram.DbMap.Context
                 entity.ToTable("HUMAN");
 
                 entity.HasIndex(e => e.Name)
-                    .HasName("NCI_HUMANNAME2");
+                    .HasName("NCI_HUMANNAME");
 
                 entity.Property(e => e.Isn).HasColumnName("ISN");
 

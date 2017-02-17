@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using Kdram.BussinesLogic;
+using Kdram.DbMap.Entities;
 
 namespace Kdram.Controllers
 {   
@@ -13,9 +14,13 @@ namespace Kdram.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public JsonResult Get()
         {
-            return new string[] { "value1", "value2" };
+            HumanResultService result = new HumanResultService();
+
+            var v = result.GetHuman();
+            var v1 = v;
+            return Json(result.GetHuman().ToList());
         }
 
         // GET api/values/5
