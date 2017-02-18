@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,14 +11,13 @@ namespace Kdram.BussinesLogic
 {
     public class HumanResultService : IHumanResultService
     {
-        #region Get Humans
+        #region Get All Humans
             public IEnumerable<Human> GetAllHumans()
             {
                var result = RepositoryFactory.HumanResult.GetAllHumans();
 
                return result;
-            }
+            }      
         #endregion
-
     }
 }

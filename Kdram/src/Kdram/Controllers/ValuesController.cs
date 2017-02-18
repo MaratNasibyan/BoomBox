@@ -6,21 +6,27 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Kdram.BussinesLogic;
 using Kdram.DbMap.Entities;
+using Kdram.Abstraction;
 
 namespace Kdram.Controllers
 {   
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        //public ValuesController(IHumanResultService humanResultService)
+        //{
+
+        //}
         // GET api/values
+        #region
+
+        #endregion
         [HttpGet]
-        public JsonResult Get()
+        public IActionResult Get()
         {
             HumanResultService result = new HumanResultService();
-
-            var v = result.GetHuman();
-            var v1 = v;
-            return Json(result.GetHuman().ToList());
+            var v = result.GetAllHumans().ToList();
+            return Json(v);          
         }
 
         // GET api/values/5
