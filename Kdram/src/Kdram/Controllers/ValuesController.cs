@@ -16,18 +16,16 @@ namespace Kdram.Controllers
         //public ValuesController(IHumanResultService humanResultService)
         //{
 
-        //}
-        // GET api/values
-        #region
-
+        //}      
+        #region GET api/values
+            [HttpGet]
+            public IActionResult Get()
+            {
+                HumanResultService result = new HumanResultService();
+                var model = result.GetAllHumans().ToList();
+                return Json(model);          
+            }
         #endregion
-        [HttpGet]
-        public IActionResult Get()
-        {
-            HumanResultService result = new HumanResultService();
-            var v = result.GetAllHumans().ToList();
-            return Json(v);          
-        }
 
         // GET api/values/5
         [HttpGet("{id}")]

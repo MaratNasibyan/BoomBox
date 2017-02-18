@@ -1,23 +1,35 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Kdram.Abstraction;
 using Kdram.DataAccess;
 using Kdram.DbMap.Entities;
+using Kdram.Models;
 
 namespace Kdram.BussinesLogic
 {
-    public class HumanResultService : IHumanResultService
+    public class HumanResultService : BaseService, IHumanResultService
     {
         #region Get All Humans
-            public IEnumerable<Human> GetAllHumans()
-            {
-               var result = RepositoryFactory.HumanResult.GetAllHumans();
+        public IEnumerable<Human> GetAllHumans()
+        {
+            List<HumanViewModel> models = new List<HumanViewModel>();
 
-               return result;
-            }      
+            var result = RepositoryFactory.HumanResult
+                        .GetAllHumans()
+                        .Where(x => x.Isn == 1)
+                        .ToList(); 
+
+            foreach(var model in result)
+            {
+                models.Add(new HumanViewModel
+                {
+                    Name = model.Name,
+                    Surname = model.Surname
+                });                
+            }
+
+            return result;
+        }      
         #endregion
     }
 }

@@ -3,13 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Kdram.Models
+namespace Kdram.BussinesLogic
 {
-    public class Class1
+    public class BaseService
     {
-        public Class1()
-        {
-           
-        }
     }
 }
