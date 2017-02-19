@@ -13,16 +13,22 @@ namespace Kdram.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        #region ctor
         //public ValuesController(IHumanResultService humanResultService)
         //{
 
         //}      
+
+
+        #endregion
+
         #region GET api/values
-            [HttpGet]
+        [HttpGet]
             public IActionResult Get()
             {
                 HumanResultService result = new HumanResultService();
                 var model = result.GetAllHumans().ToList();
+
                 return Json(model);          
             }
         #endregion

@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Kdram.DbMap.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Kdram
 {
@@ -29,6 +31,9 @@ namespace Kdram
         {
             // Add framework services.
             services.AddMvc();
+
+            var Connection = @"Data Source=MARAT; Initial Catalog=Kdram; Integrated Security=True; Trusted_Connection=True";
+            services.AddDbContext<KdramResultsEntities>(options => options.UseSqlServer(Connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

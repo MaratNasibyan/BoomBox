@@ -6,11 +6,14 @@ namespace Kdram.DbMap.Entities
 {
     public partial class KdramResultsEntities : DbContext
     {
+        //public KdramResultsEntities(DbContextOptions<KdramResultsEntities> options)
+        //    : base(options)
+        //{ }
         public virtual DbSet<Human> Human { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+            // #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
             optionsBuilder.UseSqlServer(@"Data Source= MARAT; Initial Catalog=Kdram; Integrated Security=True; Trusted_Connection=True");
         }
 

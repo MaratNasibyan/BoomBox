@@ -15,7 +15,12 @@ namespace Kdram.DataAccess.Repositories
     {
         IEnumerable<Human> IHumanResultRepository.GetAllHumans()
         {
-            return this.KdramResultsEntities.Human.FromSql("EXEC GetHumans").ToList();
+            return this.KdramResultsEntities.Human.FromSql("EXEC GetHumans");
         }
+
+        //public string[] Table()
+        //{
+        //    return this.KdramResultsEntities.
+        //}
      }
 }

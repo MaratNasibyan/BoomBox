@@ -12,7 +12,7 @@ namespace Kdram.BussinesLogic
         #region Get All Humans
         public IEnumerable<Human> GetAllHumans()
         {
-            List<HumanViewModel> models = new List<HumanViewModel>();
+            IList<HumanViewModel> models = new List<HumanViewModel>();
 
             var result = RepositoryFactory.HumanResult
                         .GetAllHumans()
