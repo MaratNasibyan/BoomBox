@@ -11,4 +11,16 @@ namespace Kdram.Abstraction
     {
        IEnumerable<Human> GetAllHumans();
     }
+    
+   
+    /*public interface IOrgResultsLogService
+    {
+        void Error<T>(T value, UserInfo userInfo);
+
+        void Error(string message);
+
+        void Info(string infoMessage);
+    }
+    */
+    
 }
