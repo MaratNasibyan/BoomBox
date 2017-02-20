@@ -13,11 +13,13 @@ namespace Kdram.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        IHumanResultService humanService;
+        
         #region ctor
-        //public ValuesController(IHumanResultService humanResultService)
-        //{
-
-        //}      
+        public ValuesController(IHumanResultService humanResultService) //: base(IuserService,IlogService)
+        {
+           this.humanService = humanResultService;
+        }      
 
 
         #endregion
