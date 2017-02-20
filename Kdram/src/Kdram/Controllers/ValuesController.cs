@@ -24,13 +24,13 @@ namespace Kdram.Controllers
 
         #region GET api/values
         [HttpGet]
-            public IActionResult Get()
-            {
-                HumanResultService result = new HumanResultService();
-                var model = result.GetAllHumans().ToList();
+        public IEnumerable<Human> Get()
+        {
+            HumanResultService result = new HumanResultService();
+            var model = result.GetAllHumans().ToList();
 
-                return Json(model);          
-            }
+            return model;          
+        }
         #endregion
 
         // GET api/values/5
