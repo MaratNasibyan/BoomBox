@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Kdram.DbMap.Entities;
 using Microsoft.EntityFrameworkCore;
+using Kdram.Abstraction;
+using Kdram.BussinesLogic;
 
 namespace Kdram
 {
@@ -34,6 +36,8 @@ namespace Kdram
 
             var Connection = @"Data Source=MARAT; Initial Catalog=Kdram; Integrated Security=True; Trusted_Connection=True";
             services.AddDbContext<KdramResultsEntities>(options => options.UseSqlServer(Connection));
+
+            services.AddTransient<IHumanResultService, HumanResultService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
