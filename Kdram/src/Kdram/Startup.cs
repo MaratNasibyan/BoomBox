@@ -34,9 +34,9 @@ namespace Kdram
             // Add framework services.
             services.AddMvc();
 
-            var Connection = @"Data Source=MARAT; Initial Catalog=Kdram; Integrated Security=True; Trusted_Connection=True";
-            services.AddDbContext<KdramResultsEntities>(options => options.UseSqlServer(Connection));
-
+           // var Connection = @"Data Source=MARAT; Initial Catalog=Kdram; Integrated Security=True; Trusted_Connection=True";
+            services.AddDbContext<KdramResultsEntities>(options => options.UseSqlServer(Configuration.GetConnectionString("KdramResultsEntities")));
+           
             services.AddTransient<IHumanResultService, HumanResultService>();
         }
 
