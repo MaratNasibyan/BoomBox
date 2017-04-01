@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using DataAccess.Repositories;
+using DbMap.Entities;
 
 namespace XShop.Controllers
 {
@@ -11,9 +13,11 @@ namespace XShop.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Product> Get()
         {
-            return new string[] { "value1", "value2" };
+            ProductRepositories f = new ProductRepositories();
+            return f.GetProduct();
+            // return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5

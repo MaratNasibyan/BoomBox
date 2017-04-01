@@ -1,9 +1,9 @@
-{
+﻿{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:3996/",
+      "applicationUrl": "http://localhost:2914/",
       "sslPort": 0
     }
   },
@@ -15,8 +15,13 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "XShopApi": {
-      "commandName": "Project"
+    "WebApplication1": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:2915"
     }
   }
 }
