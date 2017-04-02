@@ -6,19 +6,20 @@ using Microsoft.AspNetCore.Mvc;
 using DataAccess.Repositories;
 using DbMap.Entities;
 
+
 namespace XShop.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
         // GET api/values
-        [HttpGet]
-        public IEnumerable<Product> Get()
-        {
-            ProductRepositories f = new ProductRepositories();
-            return f.GetProduct();
-           // return new string[] { "value1", "value2" };
-        }
+        //[HttpGet]
+        //public IEnumerable<Product> Get()
+        //{
+        //    ProductRepositories result = new ProductRepositories();
+        //    return result.GetProduct();
+        //   // return new string[] { "value1", "value2" };
+        //}
 
         // GET api/values/5
         [HttpGet("{id}")]
