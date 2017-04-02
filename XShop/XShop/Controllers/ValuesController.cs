@@ -17,7 +17,7 @@ namespace XShop.Controllers
         {
             ProductRepositories f = new ProductRepositories();
             return f.GetProduct();
-            // return new string[] { "value1", "value2" };
+           // return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5

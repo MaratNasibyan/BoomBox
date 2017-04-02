@@ -5,6 +5,7 @@ using DbMap.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using DataAccess.Abstraction;
+using System.Linq;
 
 namespace DataAccess.Repositories
 {
@@ -18,7 +19,12 @@ namespace DataAccess.Repositories
 
         public IEnumerable<Product> GetProduct()
         {
-            return  context.Product;
+            return context.Product.FromSql("GetProducts");
+        }
+
+        public void f()
+        {
+            //var v = context.Product.Where(n=>n.)
         }
     }
 }

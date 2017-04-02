@@ -1,0 +1,1 @@
+Scaffold-DbContext "Data Source= MARAT; Initial Catalog=Shop; Integrated Security=True; Trusted_Connection=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entities -Force

@@ -47,6 +47,12 @@ namespace DbMap.Entities
                 entity.Property(e => e.Name)
                     .IsRequired()
                     .HasMaxLength(50);
+
+                entity.HasOne(d => d.Department)
+                    .WithMany(p => p.Product)
+                    .HasForeignKey(d => d.DepartmentId)
+                    .OnDelete(DeleteBehavior.Restrict)
+                    .HasConstraintName("FK_Product_Department");
             });
         }
     }
